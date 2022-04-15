@@ -12,7 +12,7 @@ public class pattern16{
             int count = 1;
             for(int cst=1;cst<=nst;cst++){
                 
-                nxt=count;
+              
                 System.out.print(count++ +"\t");
                 
 
