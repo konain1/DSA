@@ -13,8 +13,8 @@ public class pattern16{
             for(int cst=1;cst<=nst;cst++){
                 
                 nxt=count;
-                System.out.print(count+"\t");
-                count++;
+                System.out.print(count++ +"\t");
+                
 
                
                 // count = (cst <= nst/2+1)?count+1:count-1;
@@ -28,6 +28,7 @@ public class pattern16{
             
             if(r == n){
                 nst--;
+                count--;
             }
 
             // if(r==n)count--;
@@ -41,11 +42,11 @@ public class pattern16{
 
                 
             // }
-                if(r==n)nxt--;
+               
             for(int cst = 1;cst<=nst;cst++){
                 
-                System.out.print(nxt+"\t");
-                nxt--;
+                System.out.print(--count+"\t");
+                
             }
             
             System.out.println();
