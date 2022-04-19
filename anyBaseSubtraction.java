@@ -2,7 +2,7 @@
 import java.util.Scanner;
 
 public class anyBaseSubtraction  {
-
+//hjo
 
     public static int getDifference(int b , int n1 , int n2){
 
