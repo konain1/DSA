@@ -34,12 +34,12 @@ public class searchX2D{
     public static void main(String[] args) throws Exception {
         // write your code here
         Scanner scn = new Scanner(System.in);
-        System.out.println("Enter Value");
-        
+         
         int n = scn.nextInt();
         
         int [][] arr = new int[n][n];
-        
+        System.out.println("Enter Value");
+       
         for(int i = 0;i<n;i++){
             for(int j = 0;j<n;j++){
                 arr[i][j] = scn.nextInt();
