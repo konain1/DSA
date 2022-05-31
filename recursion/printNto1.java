@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class printNto1 {
     
-public static void ntimes(int i,int n){
+public static void ntimes(int i){
     if(i<1){
         return;
     }
     System.out.println(i);
-    ntimes(i-1,n);
+    ntimes(i-1);
     
 }
 
@@ -17,7 +17,7 @@ public static void ntimes(int i,int n){
 
         int n = scn.nextInt();
 
-        ntimes(n,n);
+        ntimes(n);
         
     }
 }
