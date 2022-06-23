@@ -26,6 +26,13 @@ public class maze {
                 myAns.add("h"+ele);
             }
         }
+
+          if(sc + 1 <= dc && sr + 1 <= dr){
+            ArrayList <String> dcall = getmazePaths(sr+1, sc+1, dr, dc);
+            for(String ele : dcall){
+                myAns.add("d"+ele);
+            }
+        }
             //jumping rows
         if(sr + 1 <= dr){
             ArrayList <String> vcall = getmazePaths(sr+1, sc, dr, dc);
