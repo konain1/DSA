@@ -40,6 +40,7 @@ public class mazeNewMethod {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
         int m = scn.nextInt();
+        scn.close();
 
         mazePart2(0,0,n-1,m-1,"");
         
