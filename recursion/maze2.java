@@ -15,6 +15,9 @@ public class maze2 {
             if(sc+1 <= dc){
                 mazePath(sr, sc+1, dr, dc, path+"h");
             }
+            if(sc+1 <= dc && sr+1 <= dr){
+                mazePath(sr+1, sc+1, dr, dc, path+"d");
+            }
     }
     
     public static void main(String[] args) {
