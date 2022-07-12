@@ -1,15 +1,17 @@
+
 import java.util.Scanner;
 
 
-class floodfill {
+class floodfill2 {
 
-    // static int [][]dir = {
-    //     {-1,0},
-    //     {0,-1},
-    //     {1,0},
-    //     {0,1}
-    // };
-    
+    static int [][]dir = {
+        {-1,0},
+        {0,-1},
+        {1,0},
+        {0,1}
+    };
+    static String [] dirName = {"t","l","d","r"};
+
     public static void floodfillAlgo(int [][] maze ,int sr,int sc,String ans){
 
         if(sr ==  maze.length-1 && sc == maze[0].length -1){
@@ -22,10 +24,16 @@ class floodfill {
         }
         maze[sr][sc] = 1;
 
-        floodfillAlgo(maze, sr-1, sc, ans+"t");
-        floodfillAlgo(maze, sr, sc-1, ans+"l");
-        floodfillAlgo(maze, sr+1, sc, ans+"d");
-        floodfillAlgo(maze, sr, sc+1, ans+"r");
+        for(int i = 0;i<dir.length;i++){
+            int r = sr + dir[i][0];
+            int c = sc + dir[i][1];
+            floodfillAlgo(maze, r, c, ans+dirName[i]);
+        }
+
+        // floodfillAlgo(maze, sr-1, sc, ans+"t");
+        // floodfillAlgo(maze, sr, sc-1, ans+"l");
+        // floodfillAlgo(maze, sr+1, sc, ans+"d");
+        // floodfillAlgo(maze, sr, sc+1, ans+"r");
 
         maze[sr][sc] = 0;
     }
