@@ -19,6 +19,7 @@ class targetSubsequence {
 
         //picked 
         findTarget(arr,idx+1, target, sum+arr[idx], ans+", "+arr[idx]);
+        //not picked
         findTarget(arr, idx+1, target, sum, ans);
     }
 
