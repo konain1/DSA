@@ -3,6 +3,7 @@
     "java.project.sourcePaths": [
         "recursion",
         "gfg",
-        "LinkedList/Add First In Linked List"
+        "LinkedList/Add First In Linked List",
+        "DP/Fibonacci"
     ]
 }
