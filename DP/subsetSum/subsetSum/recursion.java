@@ -11,8 +11,11 @@ public class recursion {
         }
 
         if(sum < arr[n-1]){
+            // excluding the element
            return TrueOrFalse(arr, n-1, sum );
         }else {
+            // including the element 
+            // excluding the element
            return TrueOrFalse(arr, n-1, sum) || TrueOrFalse(arr, n-1, sum- arr[n-1]); 
         }
         
